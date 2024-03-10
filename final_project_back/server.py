@@ -8,7 +8,7 @@ from EmotionDetection.emotion_detection import emotion_detector
 
 app = Flask(__name__)
 
-@app.route('/EmotionDetector', methods=['POST'])
+@app.route('/templates', methods=['POST'])
 def emotion_detector_route():
     data = request.get_json()
     text = data.get('text', '')
